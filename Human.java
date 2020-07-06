@@ -3,10 +3,10 @@ package com.company;
 import java.util.Scanner;
 
 public class Human {
-    private Scanner name;
+    private String name;
     private int cash;
 
-    public Human(Scanner name, int cash){
+    public Human(String name, int cash){
         this.name=name;
         this.cash=cash;
 
@@ -21,7 +21,7 @@ public class Human {
         return cash;
     }
 
-    public Scanner getName()
+    public String getName()
     {
         return name;
     }
