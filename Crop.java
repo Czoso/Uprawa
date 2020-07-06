@@ -5,14 +5,16 @@ public class Crop {
     private int age;
     private int price;
     private int harvestAge;
-    private int id;
+    private int seedId;
+    private int water;
 
-    public Crop(String name, int age, int price, int harvestAge, int id){
+    public Crop(String name, int age, int price, int harvestAge, int seedId, int water){
         this.name=name;
         this.age=age;
         this.price=price;
         this.harvestAge=harvestAge;
-        this.id=id;
+        this.seedId=seedId;
+        this.water=water;
     }
     public int getPrice(){
         return price;
@@ -26,8 +28,21 @@ public class Crop {
     public int getHarvestAge(){
         return harvestAge;
     }
-    public int getId(){
-        return id;
+    public void setHarvestAge(int harvestAge){
+            this.harvestAge=harvestAge;
     }
+    public int getSeedId(){
+        return seedId;
+    }
+    public void setWater(int water){
+        this.water=water;
+    }
+    public int getWater(){
+        return water;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
 
 }
