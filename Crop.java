@@ -1,6 +1,6 @@
 package com.company;
 
-public class Crop {
+public class Crop implements Cloneable {
     private String name;
     private int age;
     private int price;
@@ -44,5 +44,8 @@ public class Crop {
         this.age = age;
     }
 
-
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
